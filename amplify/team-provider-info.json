@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-rnamp-dev-174013-authRole",
+      "UnauthRoleArn": "arn:aws:iam::884563472754:role/amplify-rnamp-dev-174013-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::884563472754:role/amplify-rnamp-dev-174013-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-rnamp-dev-174013-deployment",
+      "UnauthRoleName": "amplify-rnamp-dev-174013-unauthRole",
+      "StackName": "amplify-rnamp-dev-174013",
+      "StackId": "arn:aws:cloudformation:ap-south-1:884563472754:stack/amplify-rnamp-dev-174013/05844b00-4665-11ec-af60-023c0248e344",
+      "AmplifyAppId": "d15cuwlypq3kxt"
+    },
+    "categories": {
+      "auth": {
+        "rnamp7dc5fe6e": {}
+      }
+    }
+  }
+}

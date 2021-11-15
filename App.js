@@ -10,6 +10,10 @@ import { createStackNavigator } from '@react-navigation/stack'
 import { AppearanceProvider, useColorScheme } from 'react-native-appearance'
 import DT from './darkTheme'
 import myDarkTheme from './darkTheme'
+import Amplify from 'aws-amplify'
+import config from './src/aws-exports'
+
+Amplify.configure(config)
 
 function HomeScreen() {
   return (
