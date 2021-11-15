@@ -6,12 +6,14 @@ import {
   DarkTheme,
   useTheme,
 } from '@react-navigation/native'
+import AuthHomeStack from './src/navigators/authHomeStack'
 import { createStackNavigator } from '@react-navigation/stack'
 import { AppearanceProvider, useColorScheme } from 'react-native-appearance'
 import DT from './darkTheme'
 import myDarkTheme from './darkTheme'
 import Amplify from 'aws-amplify'
 import config from './src/aws-exports'
+import { API, graphqlOperation } from 'aws-amplify'
 
 Amplify.configure(config)
 
@@ -41,7 +43,7 @@ function App() {
 
   return (
     <NavigationContainer theme={scheme === 'dark' ? MyDarkTheme : DefaultTheme}>
-      <HomeScrenStack />
+      <AuthHomeStack />
     </NavigationContainer>
   )
 }
