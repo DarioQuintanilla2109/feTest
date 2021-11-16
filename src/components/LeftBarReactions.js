@@ -65,15 +65,16 @@ export default function LeftBarReactions() {
 const styles = StyleSheet.create({
   container: {
     zIndex: 100,
-    marginHorizontal: 3,
+    marginLeft: 2,
     position: 'absolute',
     marginTop: windowHeight / 8,
   },
   txtStyle: {
     color: 'white',
+    marginLeft: 7,
+    marginTop: 1,
   },
   spacer: {
-    alignItems: 'center',
-    margin: 3,
+    margin: 2,
   },
 })
