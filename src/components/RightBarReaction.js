@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     zIndex: 100,
     marginLeft: windowWidth / 1.13,
     position: 'absolute',
-    marginTop: windowHeight / 1.4,
+    marginTop: windowHeight / 1.355,
   },
   txtStyle: {
     color: 'white',
