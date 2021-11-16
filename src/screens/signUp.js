@@ -5,7 +5,7 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 export default function signUp({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
-      <Text> signUp</Text>
+      <Text>Sign up</Text>
     </SafeAreaView>
   )
 }

@@ -11,31 +11,11 @@ import { createStackNavigator } from '@react-navigation/stack'
 import { AppearanceProvider, useColorScheme } from 'react-native-appearance'
 import DT from './darkTheme'
 import myDarkTheme from './darkTheme'
+import { withAuthenticator } from 'aws-amplify-react-native'
 import Amplify from 'aws-amplify'
 import config from './src/aws-exports'
-import { API, graphqlOperation } from 'aws-amplify'
 
 Amplify.configure(config)
-
-function HomeScreen() {
-  return (
-    <SafeAreaView>
-      <View>
-        <Text style={{ color: 'white' }}>Home Screen</Text>
-      </View>
-    </SafeAreaView>
-  )
-}
-
-const HomeStack = createStackNavigator()
-
-function HomeScrenStack({ navigation }) {
-  return (
-    <HomeStack.Navigator>
-      <HomeStack.Screen name='Home' component={HomeScreen}></HomeStack.Screen>
-    </HomeStack.Navigator>
-  )
-}
 
 function App() {
   const scheme = useColorScheme()
@@ -48,4 +28,4 @@ function App() {
   )
 }
 
-export default App
+export default withAuthenticator(App)
