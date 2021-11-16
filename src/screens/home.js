@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, ImageBackground } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import imgBack from '../../assets/imgBack.jpg'
 import Navbar from '../components/Navbar'
-
+import LeftBarReactions from '../components/LeftBarReactions'
 export default function home({ navigation }) {
   return (
     <ImageBackground
@@ -14,6 +14,7 @@ export default function home({ navigation }) {
     >
       <SafeAreaView style={styles.container}>
         <Navbar />
+        <LeftBarReactions />
       </SafeAreaView>
     </ImageBackground>
   )
