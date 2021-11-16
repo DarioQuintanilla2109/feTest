@@ -5,6 +5,8 @@ import imgBack from '../../assets/imgBack.jpg'
 import Navbar from '../components/Navbar'
 import LeftBarReactions from '../components/LeftBarReactions'
 import RightBarReactions from '../components/RightBarReaction'
+import CheckButton from '../components/CheckButton'
+import BlMenu from '../components/BlMenu'
 export default function home({ navigation }) {
   return (
     <ImageBackground
@@ -17,6 +19,8 @@ export default function home({ navigation }) {
         <Navbar />
         <LeftBarReactions />
         <RightBarReactions />
+        <CheckButton />
+        <BlMenu />
       </SafeAreaView>
     </ImageBackground>
   )
